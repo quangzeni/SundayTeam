@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=table2, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial;
+        }
+        table{
+            border-spacing: 0px;
+        }
+   
+
+
+        th{
+            background-color: #DE8705;
+            border-collapse: collapse;
+            width: 500px;            
+            border-color: #222536;
+            /* border: 0px solid #222536; */
+        }
+        thead th{
+           color: #D6D32E;
+           font-size: 16px;
+           text-align: left;
+           padding: 10px;
+           
+        }
+        td{
+            background-color: #222536;
+            border-collapse: collapse;
+            color: #D6D32E;
+            padding: 12px;
+            text-align: left;
+            width: 20px;
+            /* border: 0px solid #222536; */
+            border-color: #222536;
+        }
+        .ri{
+            text-align: right;
+        }
+        .checkbox{
+            text-align: right;
+            
+        }
+        tfoot th{
+            text-align: right;
+            padding: 10px;
+        }
+        .button1{
+            padding:10px 20px;
+            background-color:#62AF5E ;
+            border: 1px solid #62AF5E;
+            color: white;
+        }
+        .button2{
+            padding:10px 20px;
+            background-color:#D9544F ;
+            border: 1px solid #D9544F;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <th colspan="2">Sign Up</th>
+            
+        </thead>
+        <tr>
+            <td class="ri"><label for="first">First Name</label></td>
+            <td><input type="text" name="" id="first" placeholder="Enter First Name"></td>
+        </tr>
+        <tr>
+            <td class="ri"><label for="last">Last Name</label></td>
+            <td><input type="text" name="" id="last" placeholder="Enter First Name"></td>
+        </tr>
+        <tr>
+            <td class="ri">Date of Birth</td>
+            <td>
+                <select name="date" id="date">
+                    <option value="date">Date</option>                    
+                </select>
+                <select name="month" id="month">
+                    <option value="month">Month</option>
+                </select>
+                <select name="year" id="year">
+                    <option value="year">Year</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="ri">Gender</td>
+            <td>
+                <input type="radio" name="gender" id="male">
+                <label for="gender">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="gender">Female</label>
+            </td>
+        </tr>
+        <tr>
+            <td class="ri">Country</td>
+            <td><select name="country" id="country">
+                <option value="country">Country</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td class="ri">E-mail</td>
+            <td><input type="text" name="mail" id="mail" placeholder="Enter E-mail"></td>
+        </tr>
+        <tr>
+            <td class="ri">Phone</td>
+            <td><input type="text" name="phone" id="phone" placeholder="Enter Phone"></td>
+        </tr>
+        <tr>
+            <td class="ri">Password</td>
+            <td><input type="text" name="" id=""></td>
+        </tr>
+        <tr>
+            <td class="ri">Confirm Password</td>
+            <td><input type="text" name="" id=""></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="2">
+                <input type="checkbox" name="check" id="checkbox">
+                <label for="checkbox">I Agree to the Terms of use</label>
+            </td>
+            
+        </tr>
+        <tfoot>
+            <th colspan="2">
+                <button class="button1">Submit</button>
+                <button class="button2">Cancel</button>
+            </th>
+        </tfoot>
+    </table>
+</body>
+</html>
