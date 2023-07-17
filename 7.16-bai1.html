@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            border: 0px;
+            box-sizing: border-box;
+            font-size: 100%;
+        }
+        main{
+            background-color: #995BED;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 300px;
+            height: 450px;
+            padding: 10px 20px 10px 20px;
+
+        }
+        .sidebartitle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 50px;
+            background-color: #FFFFFF;
+
+        }
+        .sidebartitle>h2{
+            font-size: 20px;
+            color: #CCCCCC;
+        }
+        .sidebarunder{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            background-color: #FFFFFF;
+            width: 100%;
+            height: 250px;
+            
+        }
+        .sidebarunder>div{
+            display: flex;
+            justify-content: start;
+            height: 40px;
+            align-items: center;
+            padding: 10px;
+            color: #555555;
+        }
+        .sidebarunder>div>i{
+            padding: 0px 10px;
+            width: 35px;
+        }
+        .avatar{
+            width: 100%;
+            height: 130px;
+            background-color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .avatar_img{
+            border-radius: 50%;
+            width: 90px;
+            height: 90px;
+            background-size: cover;
+            background-image: url(https://image-us.eva.vn/upload/3-2023/images/2023-07-11/s-1689043829-388-width800height700.jpg);
+        }
+        .avatar>h4{
+            font-size: 19px;
+            color: #555555;
+        }
+        .sidebarunder>div:hover{
+            background-color: rgba(247,242,255, 1);
+            color: #995BED;
+        }
+        .sidebarunder>div>p:hover{
+            background-color: rgba(247,242,255, 1);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="sidebartitle">
+            <h2>SIDEBAR</h2>
+        </div>        
+        <div class="sidebarunder">
+            <div>
+                <i class="fa-solid fa-house"></i>
+                <p>Home</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-user"></i>
+                <p>About Me</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-camera-retro"></i>
+                <p>Portfolio</p>
+            </div>
+            <div>
+                <i class="fa-regular fa-envelope-open"></i>
+                <p>Contact Me</p>
+            </div>
+        </div>
+        <div class="avatar">
+            <div class="avatar_img">
+            </div>
+            <h4>Linda Hart</h4>
+        </div>
+    </main>
+</body>
+</html>
